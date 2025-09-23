@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Никите - 17! 🎉</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Прелоадер -->
+    <div class="preloader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Загрузка волшебства...</div>
+        </div>
+    </div>
+
+    <!-- Анимированный фон -->
+    <div class="background-animation">
+        <div class="gradient-orbs orb-1"></div>
+        <div class="gradient-orbs orb-2"></div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="container">
+        <div class="card-container">
+            <div class="card" id="birthday-card">
+                <div class="card-inner">
+                    <!-- Лицевая сторона -->
+                    <div class="card-front">
+                        <div class="front-content">
+                            <div class="main-content">
+                                <div class="age-badge">
+                                    <span>17</span>
+                                    <div class="badge-glow"></div>
+                                </div>
+                                
+                                <h1 class="hero-title">
+                                    <span class="title-text">Никита</span>
+                                    <span class="title-underline"></span>
+                                </h1>
+                                
+                                <p class="subtitle">Новая глава начинается сегодня</p>
+                                
+                                <div class="countdown-section" id="countdown-section">
+                                    <div class="countdown-title">
+                                        <i class="fas fa-hourglass-half"></i>
+                                        До твоего дня рождения:
+                                    </div>
+                                    <div class="countdown" id="countdown">
+                                        <div class="countdown-item">
+                                            <div class="countdown-number" id="hours">00</div>
+                                            <div class="countdown-label">часов</div>
+                                        </div>
+                                        <div class="countdown-separator">:</div>
+                                        <div class="countdown-item">
+                                            <div class="countdown-number" id="minutes">00</div>
+                                            <div class="countdown-label">минут</div>
+                                        </div>
+                                        <div class="countdown-separator">:</div>
+                                        <div class="countdown-item">
+                                            <div class="countdown-number" id="seconds">00</div>
+                                            <div class="countdown-label">секунд</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-primary flip-trigger" id="flip-btn">
+                                <span>Открыть поздравление</span>
+                                <i class="fas fa-gift"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Обратная сторона -->
+                    <div class="card-back">
+                        <div class="back-content">
+                            <div class="photo-section">
+                                <div class="photo-frame">
+                                    <img src="img/фото.jpg" 
+                                         alt="Никита" class="birthday-photo" />
+                                    <div class="photo-overlay">
+                                        <h3>С Днем Рождения!</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="message-section">
+                                <div class="message-header">
+                                    <h2>С 17-летием!</h2>
+                                    <div class="celebration-emoji">🎂✨</div>
+                                </div>
+                                
+                                <div class="message-text">
+                                    <p>Дорогой Никита,</p>
+                                    <p>В этот особенный день желаем тебе ярких моментов, 
+                                    верных друзей и смелых мечтаний! Пусть этот год 
+                                    станет временем великих свершений и счастливых открытий.</p>
+                                    <p>Ты заслуживаешь всего самого лучшего! 🚀</p>
+                                </div>
+                                
+                                <div class="message-footer">
+                                    <div class="signature">
+                                        <p>С кайфом,</p>
+                                        <p class="friends">твои типы</p>
+                                    </div>
+                                    <div class="current-year">2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="action-buttons">
+                            <button class="btn btn-tertiary flip-trigger" id="flip-back-btn">
+                                <i class="fas fa-undo"></i>
+                                Назад
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Футер -->
+        <div class="footer">
+            <p>Сделано в 00 00</p>
+        </div>
+    </div>
+
+    <!-- Конфетти canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
